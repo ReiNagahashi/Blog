@@ -7,9 +7,7 @@ use App\User;
 use Illuminate\Support\Facades\Session;
 use App\Profile;
 
-class UsersController extends Controller　
-
-{
+class UsersController extends Controller{
     public function index(){
         return view('users.index')->with('users',User::all());
     }

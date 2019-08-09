@@ -8,8 +8,7 @@ use Illuminate\Support\Facades\Session;
 
 
 
-class ProfilesController extends Controller
-{
+class ProfilesController extends Controller{
     public function index(){
         return view('users.profile')->with('user',Auth::user());
     }
